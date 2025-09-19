@@ -1,21 +1,32 @@
 {
-  "name": "chuong",
+  "name": "chuong-webser",
   "version": "1.0.0",
-  "description": "Chuong Projects",
-  "main": "index.js",
+  "description": "Simple CLI web server by Chuong",
+  "bin": {
+    "webser": "./bin/webser.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/webser.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DangChuVMNewb/Chuong.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "web",
+    "server",
+    "cli",
+    "express"
+  ],
+  "author": "Chuong",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
     "url": "https://github.com/DangChuVMNewb/Chuong/issues"
   },
-  "homepage": "https://github.com/DangChuVMNewb/Chuong#readme"
+  "homepage": "https://github.com/DangChuVMNewb/Chuong#readme",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "express": "^4.18.2"
+  }
 }
