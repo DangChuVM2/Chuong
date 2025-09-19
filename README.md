@@ -1,3 +1,3 @@
-# Chuong Website
-Chuong Hugo Website Projects
+# Chuong
+Chuong Projects
 
