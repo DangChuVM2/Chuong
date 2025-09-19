@@ -1,3 +1,18 @@
-baseURL = 'https://dangchuvmnewb.github.io/Chuong/'
-languageCode = 'vi-vn'
-title = 'Chuong Site'
+baseURL = "https://dangchuvmnewb.github.io/Chuong/"
+languageCode = "vi-vn"
+title = "Chuong Site"
+theme = "PaperMod"   # thay bằng tên theme bạn dùng
+paginate = 10
+enableRobotsTXT = true
+
+# Nếu muốn có RSS feed:
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# Nếu theme có params (ví dụ PaperMod)
+[params]
+  author = "Chuong"
+  description = "Blog của Chuong"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = true
