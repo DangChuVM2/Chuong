@@ -4,6 +4,7 @@
   "description": "Simple CLI web server by Chuong",
   "bin": {
     "webser": "./bin/webser.js"
+    "test": "echo h",
   },
   "scripts": {
     "start": "node ./bin/webser.js"
