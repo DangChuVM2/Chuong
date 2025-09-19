@@ -2,13 +2,16 @@
 
 const express = require("express");
 const path = require("path");
+const serveIndex = require("serve-index");
 const { Command } = require("commander");
 
 const program = new Command();
 
 program
-  .option("-p, --port <number>", "Port để chạy server", "8080")
-  .option("-d, --dir <path>", "Thư mục web root", process.cwd());
+  .name("webser")
+  .description("Simple CLI static web server")
+  .option("-p, --port <number>", "Port to run server", "8080")
+  .option("-d, --dir <path>", "Directory to serve", process.cwd());
 
 program.parse(process.argv);
 
@@ -18,8 +21,9 @@ const rootDir = path.resolve(options.dir);
 
 const app = express();
 app.use(express.static(rootDir));
+app.use(serveIndex(rootDir, { icons: true }));
 
 app.listen(port, () => {
-  console.log(`📂 Web server chạy tại http://localhost:${port}`);
-  console.log(`📁 Serving files từ: ${rootDir}`);
+  console.log(`🚀 Server running at: http://localhost:${port}`);
+  console.log(`📂 Serving directory: ${rootDir}`);
 });
