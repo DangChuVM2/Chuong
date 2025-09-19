@@ -1,5 +1,5 @@
 {
-  "name": "chuong-webser",
+  "name": "@dangchuvmnewb/webser",
   "version": "1.0.0",
   "description": "Simple CLI web server by Chuong",
   "bin": {
@@ -23,6 +23,9 @@
   "type": "commonjs",
   "bugs": {
     "url": "https://github.com/DangChuVMNewb/Chuong/issues"
+"publishConfig": {
+  "registry": "https://npm.pkg.github.com"
+}
   },
   "homepage": "https://github.com/DangChuVMNewb/Chuong#readme",
   "dependencies": {
