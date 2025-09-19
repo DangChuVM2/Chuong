@@ -1,3 +1,0 @@
-User-agent: *
-Disallow:
-Sitemap: https://dangchuvmnewb.github.io/Chuong/sitemap.xml
